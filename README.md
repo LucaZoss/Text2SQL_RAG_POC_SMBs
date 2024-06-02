@@ -1,3 +1,4 @@
+```markdown
 This is the project structure of the RAG system. You can add directories and/or modify them as you want. As of now is just a reference
 
 
@@ -27,3 +28,4 @@ rag_datalake/
 │
 ├── main.py
 └── requirements.txt  --Libraries required to install prior to executing: "pip install -r requirements"
+```
