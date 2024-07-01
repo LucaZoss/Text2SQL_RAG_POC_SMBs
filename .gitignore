@@ -4,6 +4,12 @@
 # Ignore all __pycache__ directories
 __pycache__/
 
+# Ignore Folder
+html_viz/
+tableinfo_dir/
+tmp/
+future_enhancements/ui
+
 # Ignore specific files in specific folders
 data_science_folder/raw
 data_science_folder/cleaned
@@ -12,6 +18,8 @@ html_viz/text2sql_dag.html
 data_science_folder/research/rag_research.ipynb
 data_science_folder/research/eda_forecasting.ipynb
 data_science_folder/research/rag_research.ipynb
+
+
 
 
 

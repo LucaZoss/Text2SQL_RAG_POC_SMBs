@@ -1,1 +1,0 @@
-{"table_name": "customer_rfm_analysis", "table_summary": "The table provides a Recency, Frequency, Monetary (RFM) analysis of customers. It includes customer ID, recency of purchase, frequency of purchase, monetary value, scores for each RFM component, overall RFM score, and RFM segment."}
