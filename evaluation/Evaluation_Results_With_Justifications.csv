@@ -1,0 +1,11 @@
+Question,Evaluation,Justification
+Retrieve the total gross revenue for each day of the week,Correct,The answers match perfectly in format and values.
+What are my number of unique customers placing orders each month?,Partially Correct,"The response matches for the months provided, but mistakenly notes that data for December is missing, which it isn't."
+What are my average order value for each type of order channel?,Wrong,It mismatched sales channel vs product category
+List the top 5 zip codes by total number of orders,Correct,"The answers match exactly with the correct data, the format could be improved"
+List my average order value per month,Partially Correct,January is not included otherwise the results match
+What is the average gross revenue by customer segments?,Wrong,The customer segment values are entirely different and not correctly reported.
+What is the correaltion between frequency and monetary scores?,Wrong,The provided answer talks about a variety of scores and suggests a qualitative analysis which is not relevant to the numerical correlation provided in the results.
+What are the total number of orders placed during weekends versus weekdays?,Correct,"Correct numbers,  the additional breakdown by day of the week was not asked"
+What is the percentage of total revenue made by B2B orders?,Partially Correct,The answer format as a percentage is correct but the value is significantly incorrect (0.16% instead of approximately 16.10%).
+Give me a summary of the last complete month's data across all order channels.,Wrong,"The response indicates a failure to retrieve data, which does not match the available correct answer."

@@ -40,10 +40,29 @@ Data columns (total 26 columns):
 
  --> Check this website for more info: [url]https://open-meteo.com/en/docs/historical-weather-api#latitude=47.0002&longitude=8.0143&hourly=temperature_2m,relative_humidity_2m,precipitation,rain,snowfall,weather_code,cloud_cover,sunshine_duration&daily=&timezone=auto
 
+RFM
+RangeIndex: 9781 entries, 0 to 9780
+Data columns (total 9 columns):
+ #   Column           Non-Null Count  Dtype     Description
+---  ------           --------------  -----  
+ 0   customer_id      9781 non-null   int64     unique customer id
+ 1   recency          9781 non-null   int64     recency abs. value
+ 2   frequency        9781 non-null   float64   frequency abs. value
+ 3   monetary         9781 non-null   float64   monetary abs. value
+ 4   recency_score    9781 non-null   int64  
+ 5   frequency_score  9781 non-null   int64  
+ 6   monetary_score   9781 non-null   int64  
+ 7   RFM_Score        9781 non-null   int64  
+ 8   RFM_Segment      9781 non-null   object    rfm customer segments
+dtypes: float64(2), int64(6), object(1)
+memory usage: 687.9+ KB
+
+
  -- hourly_orders_detailed_vanilla + _en_
  RangeIndex: 25019 entries, 0 to 25018
 Data columns (total 22 columns):
- #   Column                         Non-Null Count  Dtype  
+
+  #   Column                         Non-Null Count  Dtype  
 ---  ------                         --------------  -----  
  18  product_name                   25009 non-null  object 
  19  product_id                     25009 non-null  float64
