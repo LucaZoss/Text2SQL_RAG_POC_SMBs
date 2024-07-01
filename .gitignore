@@ -1,18 +1,16 @@
-data_science_folder/raw
-Food4Thoughts
-test3.py
-rag_search.py
-.env
-data_science_folder/cleaned
-future_enhancements/ui
-html_viz/text2sql_dag.html
-data_science_folder/research/rag_research.ipynb
-data_science_folder/research/eda_forecasting.ipynb
-tmp
 # Ignore all .html files
 *.html
 
 # Ignore all __pycache__ directories
 __pycache__/
+
+# Ignore specific files in specific folders
+data_science_folder/raw
+data_science_folder/cleaned
+future_enhancements/ui
+html_viz/text2sql_dag.html
+data_science_folder/research/rag_research.ipynb
+data_science_folder/research/eda_forecasting.ipynb
+
 
 
