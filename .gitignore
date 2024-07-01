@@ -5,5 +5,5 @@ rag_search.py
 .env
 data_science_folder/cleaned
 future_enhancements/ui
-html_viz
+html_viz/text2sql_dag.html
 tmp
