@@ -7,3 +7,10 @@ data_science_folder/cleaned
 future_enhancements/ui
 html_viz/text2sql_dag.html
 tmp
+# Ignore all .html files
+*.html
+
+# Ignore all __pycache__ directories
+__pycache__/
+
+data_science_folder/research/rag_research.ipynb
