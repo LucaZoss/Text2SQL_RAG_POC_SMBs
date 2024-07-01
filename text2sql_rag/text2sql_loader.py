@@ -51,7 +51,7 @@ class text2SQL:
                 print(f"Error parsing {csv_file}: {str(e)}")
 
     def process_tables(self):
-        tableinfo_dir = Path("text2sql_rag/tableinfo_dir")
+        tableinfo_dir = Path("tableinfo_dir")
         os.makedirs(tableinfo_dir, exist_ok=True)
 
         program = LLMTextCompletionProgram.from_defaults(
@@ -240,7 +240,7 @@ Summary: """
         return str(response)
 
     def visualize_pipeline(self):
-        html_viz_dir = Path("text2sql_rag/html_viz")
+        html_viz_dir = Path("html_viz")
         html_viz_dir.mkdir(exist_ok=True)
 
         net = Network(notebook=True, cdn_resources="in_line", directed=True)

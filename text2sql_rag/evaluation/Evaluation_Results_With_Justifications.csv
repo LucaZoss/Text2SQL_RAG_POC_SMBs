@@ -1,11 +1,31 @@
-Question,Evaluation,Justification
-Retrieve the total gross revenue for each day of the week,Correct,The answers match perfectly in format and values.
-What are my number of unique customers placing orders each month?,Partially Correct,"The response matches for the months provided, but mistakenly notes that data for December is missing, which it isn't."
-What are my average order value for each type of order channel?,Wrong,It mismatched sales channel vs product category
-List the top 5 zip codes by total number of orders,Correct,"The answers match exactly with the correct data, the format could be improved"
-List my average order value per month,Partially Correct,January is not included otherwise the results match
-What is the average gross revenue by customer segments?,Wrong,The customer segment values are entirely different and not correctly reported.
-What is the correaltion between frequency and monetary scores?,Wrong,The provided answer talks about a variety of scores and suggests a qualitative analysis which is not relevant to the numerical correlation provided in the results.
-What are the total number of orders placed during weekends versus weekdays?,Correct,"Correct numbers,  the additional breakdown by day of the week was not asked"
-What is the percentage of total revenue made by B2B orders?,Partially Correct,The answer format as a percentage is correct but the value is significantly incorrect (0.16% instead of approximately 16.10%).
-Give me a summary of the last complete month's data across all order channels.,Wrong,"The response indicates a failure to retrieve data, which does not match the available correct answer."
+Pipeline text1SQL_RAG,,,
+Question,Evaluation,Pts,Justification
+Retrieve the total gross revenue for each day of the week,Correct,1,The answers match perfectly in format and values.
+What are my number of unique customers placing orders each month?,Partially Correct,0.5,"The response matches for the months provided, but mistakenly notes that data for December is missing, which it isn't."
+What are my average order value for each type of order channel?,Wrong,0,It mismatched sales channel vs product category
+List the top 5 zip codes by total number of orders,Correct,1,"The answers match exactly with the correct data, the format could be improved"
+List my average order value per month,Partially Correct,0.5,January is not included otherwise the results match
+What is the average gross revenue by customer segments?,Wrong,0,The customer segment values are entirely different and not correctly reported.
+What is the correaltion between frequency and monetary scores?,Wrong,0,The provided answer talks about a variety of scores and suggests a qualitative analysis which is not relevant to the numerical correlation provided in the results.
+What are the total number of orders placed during weekends versus weekdays?,Correct,1,"Correct numbers,  the additional breakdown by day of the week was not asked"
+What is the percentage of total revenue made by B2B orders?,Partially Correct,0.5,The answer format as a percentage is correct but the value is significantly incorrect (0.16% instead of approximately 16.10%).
+Give me a summary of the last complete month's data across all order channels.,Wrong,0,"The response indicates a failure to retrieve data, which does not match the available correct answer."
+,,4.5,
+,Accuracy,45%,
+,,,
+,,,
+,,,
+Agentic RAG,,,
+Question,Evaluation,,Justification
+Retrieve the total gross revenue for each day of the week,Wrong,0,"No data was provided, while there was data expected."
+What are my number of unique customers placing orders each month?,Wrong,0,No data provided where detailed data was expected.
+What are my average order value for each type of order channel?,Wrong,0,"Indicates a technical issue, no accurate data provided as required."
+List the top 5 zip codes by total number of orders,Wrong,0,The zip codes and orders listed do not match the ground truth.
+List my average order value per month,Wrong,0,No data provided where detailed monthly data was expected.
+What is the average gross revenue by customer segments?,Wrong,0,"No response provided, contrary to the detailed expected data."
+What is the correlation between frequency and monetary scores?,Wrong,0,"No data provided, where a specific numerical correlation value was expected."
+What are the total number of orders placed during weekends versus weekdays?,Partially Correct,0.5,"The weekend order count is provided correctly, but weekday data is missing."
+What is the percentage of total revenue made by B2B orders?,Correct,1,The response matches the ground truth accurately.
+Give me a summary of the last complete month's data across all order channels.,Wrong,0,No data provided where detailed data was expected.
+,,1.5,
+,,15%,
