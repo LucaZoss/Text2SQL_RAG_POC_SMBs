@@ -1,0 +1,91 @@
+Question: Retrieve the total gross revenue for each day of the week
+Answer: assistant: The total gross revenue for each day of the week is as follows: 
+- Friday: $1,814,614.77
+- Monday: $2,207,869.29
+- Saturday: $647,734.37
+- Sunday: $982,224.17
+- Thursday: $2,032,436.75
+- Tuesday: $1,357,876.83
+- Wednesday: $2,937,093.91
+
+Question: What are my number of unique customers placing orders each month?
+Answer: assistant: The number of unique customers placing orders each month in 2023 are as follows: 
+- January: 789
+- February: 702
+- March: 638
+- April: 690
+- May: 890
+- June: 1111
+- July: 1058
+- August: 1143
+- September: 1109
+- October: 1493
+- November: 1639
+The data for December is not provided.
+
+Question: What are my average order value for each type of order channel?
+Answer: assistant: The average order value for each type of order channel is as follows: 
+- Clothing: $369.46
+- Facilities: $1076.28
+- Fitness: $572.48
+- Health: $208.24
+- Multi-sports: $256.29
+- Nutrition: $267.05
+- Offers: $345.98
+- Yoga: $306.06
+For categories not specified, the average order value is $109.35.
+
+Question: List the top 5 zip codes by total number of orders
+Answer: assistant: 
+The top 5 zip codes by total number of orders are
+ 5612 with 1927 orders, 
+ 5610 with 325 orders, 
+ 1700 with 297 orders, 
+ 1870 with 223 orders, 
+ and 1400 with 214 orders.
+
+Question: List my average order value per month
+Answer: assistant: Your average order value per month is as follows: 
+- December 2023: $344.51
+- November 2023: $438.58
+- October 2023: $348.40
+- September 2023: $417.40
+- August 2023: $624.32
+- July 2023: $573.73
+- June 2023: $438.96
+- May 2023: $414.68
+- April 2023: $670.19
+- March 2023: $832.12
+- February 2023: $440.84
+Please note that these values are averages and actual values may vary.
+
+Question: What is the average gross revenue by customer segments?
+Answer: assistant: 
+The average gross revenue by customer segments are as follows: 
+'At Risk' customers generate an average of 608.42, 
+'Champions' generate an average of 541.14, 
+'Frequent Low Spenders' generate an average of 26.66, 
+'Hibernating' customers generate an average of 25.54, 
+'High Spending Infrequent Customers' generate an average of 260.12, 
+'Loyal Customers' generate an average of 455.50,
+'New Customers' generate an average of 529.38, 
+'Others' generate an average of 694.43, and 
+'Potential Loyalist' generate an average of 165.50.
+
+Question: What is the correaltion between frequency and monetary scores?
+Answer: 
+assistant: 
+The data shows a variety of frequency and monetary scores. 
+There are many instances where a frequency score of 1 corresponds with a wide range of monetary scores from 1 to 5. There is also a few instances where a frequency score of 5 corresponds with a monetary score of 5 or 4. This suggests that there may not be a direct correlation between frequency and monetary scores, as a high frequency score does not always correspond with a high monetary score, and vice versa. However, a more detailed statistical analysis would be needed to confirm this.
+
+Question: What are the total number of orders placed during weekends versus weekdays?
+Answer: assistant: 
+The total number of orders placed during weekdays are 20,151, with Monday having the highest number of orders at 4,768. 
+On the other hand, the total number of orders placed during weekends are 4,868, with Sunday having more orders at 2,694 compared to Saturday's 2,174.
+
+Question: What is the percentage of total revenue made by B2B orders?
+Answer: assistant: The total revenue made by B2B orders is approximately 0.16% of the total revenue.
+
+Question: Give me a summary of the last complete month's data across all order channels.
+Answer: assistant: I'm sorry, but it seems like there was an issue retrieving the data. The query did not return any results for the last complete month's data across all order channels.
+

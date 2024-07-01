@@ -1,0 +1,93 @@
+Retrieve the total gross revenue for each day of the week
+day_of_week
+Friday       1814614.77
+Monday       2207869.29
+Saturday      647734.37
+Sunday        982224.17
+Thursday     2032436.75
+Tuesday      1357876.83
+Wednesday    2937093.91
+Name: tot_gross_revenue, dtype: float64
+
+What are my number of unique customers placing orders each month?
+month
+1      789
+2      702
+3      638
+4      690
+5      890
+6     1111
+7     1058
+8     1143
+9     1109
+10    1493
+11    1639
+12    1295
+Name: customer_id, dtype: int64
+
+What are my average order value for each type of order channel?
+tot_gross_revenue_mrktpl     18.311482
+tot_gross_revenue_int       459.747666
+tot_gross_revenue_b2b         0.770944
+dtype: float64
+
+List the top 5 zip codes by total number of orders
+postcode
+5612    1927
+5610     325
+1700     297
+1870     223
+1400     214
+Name: tot_orders, dtype: int64
+
+List my average order value per month
+month
+1     417.134682
+2     440.837668
+3     832.121343
+4     670.188781
+5     414.676905
+6     438.964879
+7     573.726259
+8     624.319909
+9     417.399455
+10    348.398141
+11    438.578277
+12    344.510246
+Name: AOV, dtype: float64
+
+What is the average gross revenue by customer segments?
+RFM_Segment
+At Risk                               189.538497
+Champions                             399.564074
+Frequent Low Spenders                  27.997126
+Hibernating                            26.544547
+High Spending Infrequent Customers    226.014165
+Loyal Customers                       261.248656
+New Customers                         222.240099
+Others                                267.134359
+Potential Loyalist                     87.037553
+Recent Low Spenders                    30.065902
+Name: monetary, dtype: float64
+
+What is the correaltion between frequency and monetary scores?
+-0.001379996614537511
+
+What are the total number of orders placed during weekends versus weekdays?
+type
+Weekday    20151
+Weekend     4868
+dtype: int64
+
+What is the percentage of total revenue made by B2B orders?
+0.16100577098289884
+
+Give me a summary of the last complete month's data across all order channels.
+tot_orders_marketplace        1094.00
+tot_orders_int                1361.00
+tot_orders_b2b                  67.00
+tot_gross_revenue_mrktpl    149692.99
+tot_gross_revenue_int       699873.60
+tot_gross_revenue_b2b        19288.25
+dtype: float64
+
