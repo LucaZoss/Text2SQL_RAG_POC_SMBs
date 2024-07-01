@@ -3,7 +3,7 @@
 
 # Ignore all __pycache__ directories
 __pycache__/
-
+text2sql_rag/__pycache__
 # Ignore Folder
 html_viz/
 tableinfo_dir/
