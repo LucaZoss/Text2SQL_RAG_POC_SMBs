@@ -1,6 +1,8 @@
 # Ignore all .html files
 *.html
 
+.env
+
 # Ignore all __pycache__ directories
 __pycache__/
 text2sql_rag/__pycache__
@@ -9,6 +11,8 @@ html_viz/
 tableinfo_dir/
 tmp/
 future_enhancements/ui
+data_science_folder/cleaned
+.streamlit/
 
 # Ignore specific files in specific folders
 data_science_folder/raw

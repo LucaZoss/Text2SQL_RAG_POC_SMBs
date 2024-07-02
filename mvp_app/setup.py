@@ -4,7 +4,7 @@ from utils import chat_space, get_logger
 
 
 def setup_agent():
-    st.title("Setup Agent")
+    st.title("Setup Data Source")
 
     csv_files = st.file_uploader("Upload CSV File", type=[
                                  "csv"], accept_multiple_files=True)

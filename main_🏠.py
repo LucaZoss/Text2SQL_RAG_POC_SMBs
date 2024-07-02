@@ -53,7 +53,7 @@ def home():
 
 def main():
     st.set_page_config(
-        page_title="Text to SQL Agent",
+        page_title="MessyAI MVP",
         page_icon="⚡️",
         layout="wide",
         initial_sidebar_state="expanded",
@@ -90,7 +90,7 @@ def main():
     st.sidebar.image("messy_logo.jpeg")
     st.sidebar.title("Navigation")
     page = st.sidebar.radio(
-        "Go to", ["Home", "Business Details", "Setup Agent", "Dashboard"])
+        "Go to", ["Home", "Business Details", "Setup Data Source", "Dashboard"])
 
     if "agent" not in st.session_state:
         st.session_state['agent'] = None
@@ -107,7 +107,7 @@ def main():
         home()
     elif page == "Business Details":
         business_details()
-    elif page == "Setup Agent":
+    elif page == "Setup Data Source":
         setup_agent()
     elif page == "Dashboard":
         dummy_dashboard()
