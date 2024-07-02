@@ -1,6 +1,7 @@
 # st_app/utils.py
 
-from text2sql_rag.text2sql_loader import text2SQL
+# from text2sql_rag.text2sql_loader import text2SQL
+from text2sql_rag.text2sql_loader_st import text2SQL
 import streamlit as st
 import logging
 
