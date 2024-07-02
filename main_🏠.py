@@ -43,7 +43,7 @@ def home():
             }
         </style>
         <div class="header">
-            <p class="slogan">All your data into a single place powered by AI</p>
+            <p class="slogan"><strong>Transforming your messy</strong> data into <strong>actionable</strong> decisions</p>
         </div>
     """, unsafe_allow_html=True)
 
