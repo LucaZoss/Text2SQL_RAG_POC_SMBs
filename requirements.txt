@@ -1,0 +1,15 @@
+firebase_admin==6.5.0
+Flask==3.0.3
+flask_login==0.6.3
+ipython==8.12.3
+llama_index==0.10.51
+openai==1.35.9
+pandas==2.2.2
+Pillow==10.4.0
+plotly==5.22.0
+python-dotenv==1.0.1
+pyvis==0.3.2
+Requests==2.32.3
+SQLAlchemy==2.0.30
+streamlit==1.31.0
+Werkzeug==3.0.3

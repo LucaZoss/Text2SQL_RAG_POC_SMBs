@@ -23,7 +23,8 @@ from IPython.display import display, HTML
 import streamlit as st
 
 dotenv.load_dotenv('.env')
-OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY"))
+OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY")
+# os.getenv("OPENAI_API_KEY"))
 
 
 class TableInfo(BaseModel):
