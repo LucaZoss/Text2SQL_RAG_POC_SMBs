@@ -1,0 +1,30 @@
+Question: What is the most recent date in the dataset?
+Answer: assistant: The most recent date in the dataset is December 30, 2023 at 23:57:16.
+
+Question: How many unique customers are there?
+Answer: assistant: There are 9781 unique customers.
+
+Question: What is the average number of orders per customer?
+Answer: assistant: The average number of orders per customer is 1.0.
+
+Question: What are the top 5 most common postcodes for orders?
+Answer: assistant: The top 5 most common postcodes for orders are 5612 with 1927 orders, 5610 with 325 orders, 1700 with 297 orders, 1870 with 223 orders, and 1400 with 214 orders.
+
+Question: List the top 5 most frequent product names by order count.
+Answer: assistant: The top 5 most frequently ordered products are 'Haltères néoprène musculation et fitness (lot de 2)' with 1562 orders, 'Haltère hexagonal "Hex Dumbbell" en caoutchouc' with 1233 orders, 'Bande de résistance élastique en latex' with 764 orders, 'Coupelles plots de marquage pour entrainements (lot de 10)' with 387 orders, and 'Kettlebell en acier avec revêtement en poudre' with 382 orders.
+
+Question: What is the average total gross revenue from internal orders?
+Answer: assistant: The average total gross revenue from internal orders is approximately 459.75.
+
+Question: How many B2B orders are there?
+Answer: assistant: There are 67 B2B orders.
+
+Question: Which day of the week has the highest average orders?
+Answer: assistant: The day of the week with the highest average orders is Wednesday.
+
+Question: What is the total cost of goods sold (COGS)?
+Answer: assistant: The total cost of goods sold (COGS) is 3944335.86.
+
+Question: What is the total revenue for B2B orders?
+Answer: assistant: The total revenue for B2B orders is $19,288.25.
+

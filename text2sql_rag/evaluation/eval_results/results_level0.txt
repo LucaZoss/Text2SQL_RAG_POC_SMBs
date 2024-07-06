@@ -1,0 +1,30 @@
+Question: What is the total number of entries in the orders dataset?
+Answer: assistant: The total number of entries in the orders dataset is 25,019.
+
+Question: List all unique years in the dataset.
+Answer: assistant: The unique year in the dataset is 2023.
+
+Question: What is the highest gross revenue recorded for any order?
+Answer: assistant: The highest gross revenue recorded for any order is $11353.18.
+
+Question: Is there any order data for the month of January?
+Answer: assistant: No, there is no order data for the month of January.
+
+Question: Are there any entries on the most recent day of data collection?
+Answer: assistant: Yes, there are 2 entries on the most recent day of data collection, which is December 30, 2023.
+
+Question: Name one product category available in the dataset.
+Answer: assistant: One product category available in the dataset is 'Multi-sports'.
+
+Question: Does the dataset contain orders from the postcode '12345'?
+Answer: assistant: The dataset does not contain any orders from the postcode '12345'.
+
+Question: Name one customer by their ID.
+Answer: assistant: The ID of one customer is 24.
+
+Question: Is there any order data from the B2B channel?
+Answer: assistant: Yes, there is order data from the B2B channel.
+
+Question: Does the dataset include any internal orders?
+Answer: assistant: Yes, the dataset includes 19,449 internal orders.
+

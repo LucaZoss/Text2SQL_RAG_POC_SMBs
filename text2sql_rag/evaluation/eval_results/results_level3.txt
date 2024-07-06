@@ -1,0 +1,29 @@
+Question: How many products are in the 'Sports' main category?
+Answer: assistant: There are no products in the 'Sports' main category.
+
+Question: What is the average revenue per month?
+Answer: assistant: The average revenue per month varies. For example, in December 2023, the average revenue was approximately $344.51. In November 2023, it was around $438.58. In October 2023, the average revenue was about $348.40, and so on. The highest average revenue was in March 2023, with approximately $832.12.
+
+Question: Which customer segment has the highest average order value?
+Answer: assistant: The customer segment with the highest average order value is 'Others' with an average order value of approximately 694.43.
+
+Question: How many orders are above the average order value?
+Answer: assistant: There are 4789 orders that are above the average order value.
+
+Question: What is the most common RFM segment?
+Answer: assistant: The most common RFM segment is 'Others' with a count of 2209.
+
+Question: What percentage of total orders are from internal website?
+Answer: assistant: The percentage of total orders from the internal website is approximately 77.76%.
+
+Question: Which product category has the highest total revenue?
+Answer: assistant: The product category with the highest total revenue is 'Fitness' with a total revenue of 7,862,978.53.
+
+Question: Retrieve the total number of orders for each month.
+Answer: assistant: The total number of orders for each month are as follows: January - 1604, February - 1398, March - 1459, April - 1526, May - 1761, June - 2111, July - 2058, August - 2200, September - 2277, October - 2765, November - 3338, and December - 2522.
+
+Question: What is the total number of unique products sold each month?
+Answer: assistant: The total number of unique products sold each month are as follows: 467 in December 2023, 493 in November 2023, 464 in October 2023, 417 in September 2023, 413 in August 2023, 373 in July 2023, 363 in June 2023, 321 in May 2023, 296 in April 2023, 257 in March 2023, 274 in February 2023, and 252 in January 2023.
+
+Question: What is my best selling product?
+Answer: assistant: Your best selling product is 'Haltères néoprène musculation et fitness (lot de 2)' with a total of 1562 orders.

@@ -38,6 +38,10 @@ class TableInfo(BaseModel):
 
 
 class text2SQL:
+    """
+    Add Comments
+    """
+
     def __init__(self):
         self.dfs = []
         self.table_infos = []
@@ -70,7 +74,7 @@ class text2SQL:
                 self.table_infos.append(table_info)
             else:
                 while True:
-                    df_str = df.head(10).to_csv()
+                    df_str = df.head(10).to_csv()  # .sample?
                     table_info = program(
                         table_str=df_str,
                         exclude_table_name_list=str(list(table_names)),
