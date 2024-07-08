@@ -148,29 +148,38 @@ Summary: """
             conn.commit()
 
     def setup_query_pipeline(self):
+        # Initialize a connection to the SQL database using the provided engine
         self.sql_database = SQLDatabase(self.engine)
+        # Create a mapping between SQL tables and their corresponding nodes
         table_node_mapping = SQLTableNodeMapping(self.sql_database)
+        # Generate schema objects for each table, including the table name and a summary context
         table_schema_objs = [
             SQLTableSchema(table_name=t.table_name,
                            context_str=t.table_summary)
             for t in self.table_infos
         ]
-
+        # Create an index from the table schema objects using the SQLTableNodeMapping and a vector store for indexing
         obj_index = ObjectIndex.from_objects(
             table_schema_objs,
             table_node_mapping,
-            VectorStoreIndex,
+            VectorStoreIndex,  # by default uses embeddinds-ada-002 from OpenAI
         )
+        # Set up a retriever that uses the object index to find similar objects based on top k similarity
         self.obj_retriever = obj_index.as_retriever(similarity_top_k=5)
+        # Initialize a SQL retriever that can execute queries against the SQL database
         self.sql_retriever = SQLRetriever(self.sql_database)
 
+        # Define a function component to get the context string for a table
         table_parser_component = FnComponent(fn=self.get_table_context_str)
+        # Define a function component to parse responses into SQL queries
         sql_parser_component = FnComponent(fn=self.parse_response_to_sql)
 
+        # Prompt template for converting text to SQL based on the database dialect
         text2sql_prompt = DEFAULT_TEXT_TO_SQL_PROMPT.partial_format(
             dialect=self.engine.dialect.name
         )
 
+        # Define a prompt template for synthesizing a response from SQL query results
         response_synthesis_prompt_str = (
             "Given an input question, synthesize a response from the query results.\n"
             "Query: {query_str}\n"
@@ -181,6 +190,7 @@ Summary: """
         response_synthesis_prompt = PromptTemplate(
             response_synthesis_prompt_str)
 
+        # Setting up the Query Pipeline
         llm = OpenAI(model="gpt-4", openai_api_key=OPENAI_API_KEY)
 
         self.qp = QP(

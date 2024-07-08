@@ -17,15 +17,15 @@ csv_file_paths = [os.path.join(target_dir, 'hourly_orders_detailed_vanilla.csv')
 # List of 10 questions to evaluate
 level_0_questions = [
     "What is the total number of entries in the orders dataset?",
-    "List all unique years in the dataset.",
-    "What is the highest gross revenue recorded for any order?",
-    "Is there any order data for the month of January?",
-    "Are there any entries on the most recent day of data collection?",
-    "Name one product category available in the dataset.",
-    "Does the dataset contain orders from the postcode '12345'?",
-    "Name one customer by their ID.",
-    "Is there any order data from the B2B channel?",
-    "Does the dataset include any internal orders?"
+    # "List all unique years in the dataset.",
+    # "What is the highest gross revenue recorded for any order?",
+    # "Is there any order data for the month of January?",
+    # "Are there any entries on the most recent day of data collection?",
+    # "Name one product category available in the dataset.",
+    # "Does the dataset contain orders from the postcode '12345'?",
+    # "Name one customer by their ID.",
+    # "Is there any order data from the B2B channel?",
+    # "Does the dataset include any internal orders?"
 ]
 
 
