@@ -39,5 +39,5 @@ def dummy_dashboard():
     st.write(df.head())
 
     with st.sidebar:
-        st.write("This is a sidebar.")
+        # st.write("This is a sidebar.")
         chat_space()

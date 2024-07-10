@@ -1,8 +1,14 @@
+# st_app/utils.py
+
+# from text2sql_rag.text2sql_loader import text2SQL
 from text2sql_rag.text2sql_loader_st import text2SQL
 import streamlit as st
 import logging
 
 import sys
+
+
+# from SQLAgent_V2 import SQLAgent_V2
 
 
 def configure_logging():
@@ -17,28 +23,31 @@ def get_logger():
 
 def chat_space():
     st.title("Assistant 🤖")
+    # st.warning("Please setup the agent first.")
     csv_file_paths = st.session_state['csv_paths']
 
     # Display example queries or actions
     example_queries = [
         "Show me the total sales for last month",
+        "List top 5 products by sales",
         "What are my top rfm segments?"
     ]
 
-    # Check if CSV files are uploaded
     if not csv_file_paths:
         st.warning("Please upload CSV files and setup the agent first.")
         return
 
-    # Initialize the text2sql instance
     text2sql_instance = text2SQL()
     text2sql_instance.load_data(csv_file_paths)
     text2sql_instance.process_tables()
     text2sql_instance.create_sql_database()
     text2sql_instance.setup_query_pipeline()
 
-    # Function to handle query execution
-    def execute_query(prompt):
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
+
+    if prompt := st.chat_input("How can I help you today?"):
         try:
             with st.chat_message("user"):
                 st.markdown(prompt)
@@ -54,18 +63,3 @@ def chat_space():
         except Exception as e:
             st.error(f"An error occurred: {e}")
             get_logger().error(f"Error during query: {e}")
-
-    # Display previous chat messages
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
-
-    # Display example query buttons
-    st.subheader("Example Queries")
-    for query in example_queries:
-        if st.button(query):
-            execute_query(query)
-
-    # User input
-    if prompt := st.chat_input("How can I help you today?"):
-        execute_query(prompt)
