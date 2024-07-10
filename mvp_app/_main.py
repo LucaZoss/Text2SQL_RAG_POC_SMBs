@@ -18,7 +18,7 @@ def home():
     # image = Image.open("./st_app/messy_logo.jpeg")
 
     # Adjust image size (optional)
-    image = image.resize((2000, 1600))
+    image = image.resize((2000, 1600))  # Adjust width and height as needed
 
     left_co, mid, right_1 = st.columns(3)
     with mid:
@@ -35,7 +35,7 @@ def home():
                 height: 30px;
                 text-align: center;
             }
-    
+
             .header .slogan {
                 font-size: 24px;
                 font-weight: bold;
@@ -56,12 +56,15 @@ def main():
         page_title="MessyAI MVP",
         page_icon="⚡️",
         layout="wide",
-        initial_sidebar_state="collapsed",  # Hide the sidebar at launch
+        initial_sidebar_state="expanded",
     )
-
     # Add custom CSS
     st.markdown("""
         <style>
+            .stApp {
+                background-color: #6A6FFD;
+                color: white;
+            }
             .header {
                 display: flex;
                 flex-direction: column;
@@ -81,8 +84,8 @@ def main():
                 margin: 0;
             }
             .stSidebar > div {
-                width: 100%;
-            }
+            width: 100%;
+        }
         </style>
     """, unsafe_allow_html=True)
 
@@ -91,26 +94,6 @@ def main():
     st.sidebar.title("Navigation")
     page = st.sidebar.radio(
         "Go to", ["Home", "Business Details", "Setup Data Source", "Dashboard"])
-
-    # Conditional background color based on the page
-    if page != "Home":
-        st.markdown("""
-            <style>
-                .stApp {
-                    background-color: #000000;  # Setting to dark
-                    color: black;
-                }
-            </style>
-        """, unsafe_allow_html=True)
-    else:
-        st.markdown("""
-            <style>
-                .stApp {
-                    background-color: #6A6FFD;
-                    color: white;
-                }
-            </style>
-        """, unsafe_allow_html=True)
 
     if "agent" not in st.session_state:
         st.session_state['agent'] = None
